@@ -1,0 +1,227 @@
+
+:root{
+    --color-primary:#000;
+    --color-primary-vip:gold;
+    --color-primary-hover:#fff;
+    --color-primary-design: red;
+    --font-primary:'Roboto', sans-serif;
+    --font-seconday:'Roboto Condensed', sans-serif;
+    
+}
+body{
+   font-family: var(--font-primary);
+}
+h1,h2,h3,h4,h5{
+   font-family: var(--font-seconday);
+}
+
+.container{
+    margin: 0 auto;
+   max-width: 990px;
+padding-left: 15px;
+padding-right: 15px;
+  
+}
+.section-heading__title{
+    font-size: 1.875rem;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 0;
+    border-bottom: 1px solid;
+
+}
+.header-menu__list{
+    margin: 0 20px 0 0;padding: 0;
+    display: flex;
+    
+}
+.header-menu__list .header-menu__item p:hover{
+color: var(--color-primary-vip);
+}
+.header-menu__item:hover{
+color: var(--color-primary-hover);
+}
+.header-menu__item p:after{
+    content: '/';
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-menu__item:last-child::after{
+    list-style: none;
+   
+}
+.header-menu__link:hover{
+color:var(--color-primary);
+}
+/*banner*/
+.section-banner{
+    text-align: center;
+    
+}
+.section-banner .container{
+    border-bottom: 1px solid;
+}
+.section-banner__title{
+    font-size: 1.25rem;
+
+}
+.section-banner .container p{
+    font-size: 20px;
+    
+}
+
+.section-banner__btn{
+   
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: var(--color-light);
+    display: 20px 44px;
+    font-size: 1.125rem;
+    font-style: inherit;
+    width: 140px;
+    height: 40px;
+    display: inline-block;
+    margin: 30px;
+    
+}
+.section-banner__btn a{
+    text-decoration: none;
+    color: #fff;
+    
+   /*vertical-align: 20px;*/
+   
+}
+.section-banner__btn:hover{
+    background: var(--color-primary-design);
+}
+/*section-My*/
+.section-MyLatestProject .container .section-body .row .col{
+    border-radius: 5px;
+    padding: 0px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+  
+}
+/*anh*/
+.section-MyLatestProject .container .section-body .row .col .section-item .section-item__img{
+    max-width: 100%;
+
+}
+/*cột(col)*/
+.section-MyLatestProject .container .section-body .row{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+   
+  
+}
+
+
+
+.section-item__title{
+    text-align: center;
+   
+
+}
+.section-item__title a{
+    text-decoration: none;
+}
+.section-item__meta span{
+    text-align: center;
+    padding-bottom: 30px;
+    display: inline-block;
+  
+}
+
+
+/*section about me*/
+.section-about-new .container{
+   
+    background-color: #E5E5E5;
+}
+.section-about-new .row{
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.section-about-new .container .row .col .sction-body p {
+    margin: 10px 10px 0px 10px;
+}
+.section-whatnew .section-body .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section-whatnew .section-body .row{
+    border-bottom: 1px solid;
+    
+}
+.section-body__icon{
+    font-size: 40px;
+    margin: 10px 10px 0 0;padding: 0;}
+.section-whatnew .section-body .row {
+    grid-gap: 5px;
+}
+
+/*footer*/
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 0;
+   
+}
+.ul{
+    margin: 0 20px 0 0;padding: 0;
+    display: flex;
+}
+.li p:after{
+    content: '/';
+    display: inline-block;
+    margin-left: 5px;
+}
+.li:last-child::after{
+    list-style: none;
+   
+}
+.footer__link p:hover{
+color:var(--color-primary-design);
+}
+.colortext span{
+    color: var(--color-primary-design)
+}
+ .footer__logo span{
+color: var(--color-primary-design);
+}
+.col-img .section-item .section-item__img{
+    margin: 20px 0 0 0 ;
+    padding: 0;
+}
+header{
+    background: coral;
+}
+
+
+@media(min-width:812px){
+    header{
+        background: red;
+    }
+}
+@media(min-width:576px){
+    header{
+        background: green;
+    }
+}
+@media(min-width:1024px){
+    .section-MyLatestProject .container .section-body .row{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+      
+    }
+    .section-about-new .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
